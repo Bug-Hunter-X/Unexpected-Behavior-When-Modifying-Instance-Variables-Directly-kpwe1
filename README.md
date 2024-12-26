@@ -1,0 +1,1 @@
+This example demonstrates an uncommon error in Ruby where modifying an instance variable directly using `instance_variable_set` prevents changes made through a getter/setter method.  The `value=` method is never called when directly modifying `@value` via `instance_variable_set`. This can cause debugging challenges, especially in larger projects.
